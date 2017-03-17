@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="icon" href="img/icon.ico">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="script/jquery-latest.min_readable.js" type="text/javascript"></script>
+    <script src="script/script_readable.js"></script>
+    <script>
+        function change(path) {
+            document.getElementById("content_frame").src = path;
+        }
+    </script>
+    <title>Der PC</title>
+</head>
+<body>
+
+<a href="index.min.html"><img class="titleimg" src="img/PC.png"></a>
+
+
+<div class="top">
+    <a class="head_a" href="index.min.html"><h1 class="pc">Der PC</h1></a>
+</div>
+
+<img class="logo" src="img/szut.jpg" align="right">
+
+<nav id="navigator">
+    <ul>
+        <li class="mainboard has-sub">
+            <a onclick="change('mainboard/start.pdf');document.title='Mainboard - Was ist das?'">Mainboard</a>
+            <ul>
+                <li>
+                    <a onclick="change('mainboard/history.pdf');document.title='Mainboard - Geschichte'">Geschichte</a>
+                </li>
+                <li class='has-sub'>
+                    <a onclick="document.title='Mainboard - Struktur/Aufbau'">Struktur/Aufbau</a>
+                    <ul>
+                        <li>
+                            <a onclick="change('mainboard/structure/dimensions.pdf');document.title='Mainboard - Maße'">Maße</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/chipset.pdf');document.title='Mainboard - Chipsatz'">Chipsatz</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/slots.pdf');document.title='Mainboard - Steckplätze & Anschlüsse'">Steckplätze & Anschlüsse</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/equipment.pdf');document.title='Mainboard - Onboardausstattung'">Onboardausstattung</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/periphery.pdf');document.title='Mainboard - Peripherie'">Peripherie-Anschlüsse</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/cooling.pdf');document.title='Mainboard - Kühlung'">Kühlung</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/further_ports.pdf');document.title='Mainboard - Weitere Anschlüsse'">Weitere Anschlüsse</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/cmos.pdf');document.title='Mainboard - COMS sRAM'">CMOS sRAM</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/pin_header.pdf');document.title='Mainboard - Stiftleisten'">Stiftleisten</a>
+                        </li>
+                        <li>
+                            <a onclick="change('mainboard/structure/jumper.pdf');document.title='Mainboard - Jumper'">Jumper</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a onclick="change('mainboard/functionality.pdf');document.title='Mainboard - Funktionsweise'">Funktionsweise</a>
+                </li>
+            </ul>
+        </li>
+        <li class="bios has-sub">
+            <a onclick="change('bios/start.pdf');document.title='BIOS'">BIOS</a>
+            <ul>
+                <li>
+                    <a onclick="change('bios/settings.pdf');document.title='BIOS - Einstellungen'">Einstellungen</a>
+                </li>
+                <li>
+                    <a onclick="change('bios/update.pdf');document.title='BIOS - Aktualisierung'">Aktualisierung</a>
+                </li>
+                <li>
+                    <a onclick="change('bios/reset.pdf');document.title='BIOS - Zurücksetzen'">Zurücksetzen</a>
+                </li>
+                <li>
+                    <a onclick="change('bios/errors.pdf');document.title='BIOS - Fehlermeldungen'">Fehlermedungen</a>
+                </li>
+                <li>
+                    <a onclick="change('bios/uefi.pdf');document.title='BIOS - Neuerungen von UEFI'">Neuerungen von UEFI</a>
+                </li>
+            </ul>
+        </li>
+        <li class="input has-sub">
+            <a onclick="document.title='Eingabegeräte'">Eingabegeräte</a>
+            <ul>
+                <li>
+                    <a onclick="change('input/keyboard.pdf');document.title='Eingabegeräte - Tastatur'">Tastatur</a>
+                </li>
+                <li>
+                    <a onclick="change('input/mouse.pdf');document.title='Eingabegeräte - Maus'">Maus</a>
+                </li>
+                <li>
+                    <a onclick="change('input/trackball.pdf');document.title='Eingabegeräte - Trackball'">Trackball</a>
+                </li>
+                <li>
+                    <a onclick="change('input/gamecontroller.pdf');document.title='Eingabegeräte - Gamecontroller'">Gamecontroller</a>
+                </li>
+                <li>
+                    <a onclick="change('input/graphictablet.pdf');document.title='Eingabegeräte - Grafiktablett'">Grafiktablett</a>
+                </li>
+                <li>
+                    <a onclick="change('input/touchscreen.pdf');document.title='Eingabegeräte - Touchscreen'">Touchscreen</a>
+                </li>
+                <li>
+                    <a onclick="change('input/microphone.pdf');document.title='Eingabegeräte - Mikrofon'">Mikrofon</a>
+                </li>
+            </ul>
+        </li>
+        <li class="output has-sub">
+            <a onclick="document.title='Ausgabegeräte'">Ausgabegeräte</a>
+            <ul>
+                <li>
+                    <a onclick="change('output/screen.pdf');document.title='Ausgabegeräte - Bildschirm'">Bildschirm</a>
+                </li>
+                <li>
+                    <a onclick="change('output/projector.pdf');document.title='Ausgabegeräte - Videoprojektor/Beamer'">Beamer</a>
+                </li>
+                <li>
+                    <a onclick="change('output/printer.pdf');document.title='Ausgabegeräte - Drucker/Plotter'">Drucker/Plotter</a>
+                </li>
+                <li>
+                    <a onclick="change('output/speaker.pdf');document.title='Ausgabegeräte - Lautsprecher/Headset'">Lautsprecher/Headset</a>
+                </li>
+                <li>
+                    <a onclick="change('output/braille.pdf');document.title='Ausgabegeräte - Braillezeile'">Braillezeile</a>
+                </li>
+            </ul>
+        </li>
+        <li class="graphicscard has-sub">
+            <a onclick="document.title='Grafikkarte'">Grafikkarte</a>
+            <ul>
+                <li>
+                    <a onclick="change('graphicscard/tasks.pdf');document.title='Grafikkarte - Hauptaufgaben'">Hauptaufgaben</a>
+                </li>
+                <li>
+                    <a onclick="change('graphicscard/construction.pdf');document.title='Grafikkarte - Aufbau'">Aufbau</a>
+                </li>
+                <li>
+                    <a onclick="change('graphicscard/history.pdf');document.title='Grafikkarte - Geschichte'">Geschichte</a>
+                </li>
+                <li>
+                    <a onclick="change('graphicscard/softwareproblems.pdf');document.title='Grafikkarte - Sofwareprobleme'">Softwareprobleme</a>
+                </li>
+                <li>
+                    <a onclick="change('graphicscard/actual.pdf');document.title='Grafikkarte - Aktueller Stand'">Aktueller Stand</a>
+                </li>
+            </ul>
+        </li>
+        <li class="digital_storage has-sub">
+            <a onclick="change('digital_storage/start.html');document.title='Digitale Speichermedien'">Digitale Speichermedien</a>
+            <ul>
+                <li class='has-sub'>
+                    <a onclick="document.title='Digitale Speichermedien - Arbeitsspeicher'">Arbeitsspeicher</a>
+                    <ul>
+                        <li>
+                            <a onclick="change('digital_storage/memory/general.pdf');document.title='Digitale Speichermedien - Arbeitsspeicher'">Allgemeines</a>
+                        </li>
+                        <li>
+                            <a onclick="change('Digital_storage/memory/ram.pdf');document.title='Digitale Speichermedien - RAM'">RAM</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class='has-sub'>
+                    <a onclick="document.title='Digitale Speichermedien - Flash-Speicher'">Flash-Speicher</a>
+                    <ul>
+                        <li>
+                            <a onclick="change('digital_storage/flash/ssd.pdf');document.title='Digitale Speichermedien - SSD - Solid State Drive'">SSD-Solid State Drive</a>
+                        </li>
+                        <li>
+                            <a onclick="change('digital_storage/flash/usb.pdf');document.title='Digitale Speichermedien - USB - Universal Serial Bus'">USB - Universal Serial Bus</a>
+                        </li>
+                        <li>
+                            <a onclick="change('digital_storage/flash/microsd.pdf');document.title='Digitale Speichermedien - MicroSD Karten'">MicroSD Karten</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a onclick="change('digital_storage/hdd.pdf');document.title='Digitale Speichermedien - HDD - Hard Disk Drive'">HDD - Hard Disk Drive</a>
+                </li>
+                <li class='has-sub'>
+                    <a onclick="document.title='Digitale Speichermedien - Optische Datenträger'">Optsische Datenträger</a>
+                    <ul>
+                        <li>
+                            <a onclick="change('digital_storage/optical/cd.pdf');document.title='Digitale Speichermedien - CD - Compact Disk'">CD - Compact Disk</a>
+                        </li>
+                        <li>
+                            <a onclick="change('digital_storage/optical/dvd.pdf');document.title='Digitale Speichermedien - DVD - Digital Versatile Disc'">DVD - Digital Versatile Disc</a>
+                        </li>
+                        <li>
+                            <a onclick="change('digital_storage/optical/bd.pdf');document.title='Digitale Speichermedien - BD - Blu-ray Disk'">BD - Blu-ray Disk</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="processor has-sub">
+            <a onclick="change('cpu/start.pdf');document.title='Prozessor (CPU)'">Prozessor</a>
+            <ul>
+                <li>
+                    <a onclick="change('cpu/history.pdf');document.title='Prozessor - Geschichte'">Geschichte</a>
+                </li>
+                <li>
+                    <a onclick="change('cpu/control.pdf');document.title='Prozessor - Steuerung'">Steuerung</a>
+                </li>
+                <li>
+                    <a onclick="change('cpu/addressing.pdf');document.title='Prozessor - Adressierung'">Aderssierung</a>
+                </li>
+                <li>
+                    <a onclick="change('cpu/processing.pdf');document.title='Prozessor - Verarbeitung'">Verarbeitung</a>
+                </li>
+                <li>
+                    <a onclick="change('cpu/architectures.pdf');document.title='Prozessor - Architekturen'">Architekturen</a>
+                </li>
+                <li>
+                    <a onclick="change('cpu/brands.pdf');document.title='Prozessor - Marken'">Marken</a>
+                </li>
+            </ul>
+        </li>
+        <li class="soundcard">
+            <a onclick="change('soundcard/start.pdf');document.title='Soundkarte'">Soundkarte</a>
+        </li>
+        <li class='raid has-sub'>
+            <a onclick="change('raid/start.pdf');document.title='Raid'">Raid</a>
+            <ul>
+                <li>
+                    <a onclick="change('raid/overview.pdf');document.title='Raid - Übersicht'">Übersicht</a>
+                </li>
+                <li>
+                    <a onclick="change('raid/terms.pdf');document.title='Raid - Begriffe'">Begriffe</a>
+                </li>
+                <li>
+                    <a onclick="change('raid/raid_0.pdf');document.title='Raid - Raid 0'">Raid 0</a>
+                </li>
+                <li>
+                    <a onclick="change('raid/raid_1.pdf');document.title='Raid - Raid 1'">Raid 1</a>
+                </li>
+                <li>
+                    <a onclick="change('raid/raid_5.pdf');document.title='Raid - Raid 5'">Raid 5</a>
+                </li>
+                <li>
+                    <a onclick="change('raid/raid_6.pdf');document.title='Raid - Raid 6'">Raid 6</a>
+                </li>
+                <li>
+                    <a onclick="change('raid/combine.pdf');document.title='Kombinationen von Raid-leveln'">Kombinationen von Raid-leveln</a>
+                </li>
+                <li>
+                    <a onclick="change('raid/zfs.pdf');document.title='ZFS - Ein Dateisystem mit Raid-integration'">ZFS – Ein Dateisystem mit Raid-integration</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a onclick="change('network_interface/start.pdf');document.title='Netzwerkschnittstellen'">Netzwerkschnittstellen</a>
+        </li>
+        <li class="power_supply">
+            <a onclick="change('power_supply/start.pdf');document.title='Netzteil'">Netzteil</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="div">
+    <iframe id="content_frame" src="start.html" class="content_frame" name="content"></iframe>
+</div>
+
+</body>
+</html>
